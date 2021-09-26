@@ -1,11 +1,11 @@
-package by.bsuir.webtech.introtasks.task2;
+package by.bsuir.webtech.introtasks.task2.rectangle;
 
 public class Rectangle {
 
-    private double x;
-    private double y;
-    private double x1;
-    private double y1;
+    private final double x;
+    private final double y;
+    private final double x1;
+    private final double y1;
 
     public Rectangle(double x, double y, double width, double height) {
         this.x = x;
@@ -14,9 +14,8 @@ public class Rectangle {
         this.y1 = y - height;
     }
 
-    public double[] getCoords()
-    {
-        double[] result = new double[] {x, y, x1, y1};
+    public double[] getCoords() {
+        double[] result = new double[]{x, y, x1, y1};
 
         return result;
     }
