@@ -1,6 +1,6 @@
-package by.bsuir.webtech.introtasks.services.impl;
+package by.bsuir.webtech.introtasks.services.input.impl;
 
-import by.bsuir.webtech.introtasks.services.interfaces.Reader;
+import by.bsuir.webtech.introtasks.services.input.interfaces.Reader;
 
 import java.util.Scanner;
 
