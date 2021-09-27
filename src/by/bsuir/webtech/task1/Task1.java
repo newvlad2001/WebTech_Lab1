@@ -1,9 +1,9 @@
-package by.bsuir.webtech.introtasks.task1;
+package by.bsuir.webtech.task1;
 
-import by.bsuir.webtech.introtasks.services.input.impl.ConsoleReader;
-import by.bsuir.webtech.introtasks.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.introtasks.services.input.interfaces.Reader;
-import by.bsuir.webtech.introtasks.services.output.interfaces.Writer;
+import by.bsuir.webtech.services.input.impl.ConsoleReader;
+import by.bsuir.webtech.services.output.impl.ConsoleWriter;
+import by.bsuir.webtech.services.input.interfaces.Reader;
+import by.bsuir.webtech.services.output.interfaces.Writer;
 
 public class Task1 {
 

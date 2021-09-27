@@ -1,4 +1,4 @@
-package by.bsuir.webtech.introtasks.task2.rectangle;
+package by.bsuir.webtech.task2.area;
 
 public class Rectangle {
 

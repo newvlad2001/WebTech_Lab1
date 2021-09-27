@@ -1,10 +1,10 @@
-package by.bsuir.webtech.introtasks.task3;
+package by.bsuir.webtech.task3;
 
-import by.bsuir.webtech.introtasks.services.input.impl.ConsoleReader;
-import by.bsuir.webtech.introtasks.services.input.interfaces.Reader;
-import by.bsuir.webtech.introtasks.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.introtasks.services.output.interfaces.Writer;
-import by.bsuir.webtech.introtasks.task3.calculator.Calculator;
+import by.bsuir.webtech.services.input.impl.ConsoleReader;
+import by.bsuir.webtech.services.input.interfaces.Reader;
+import by.bsuir.webtech.services.output.impl.ConsoleWriter;
+import by.bsuir.webtech.services.output.interfaces.Writer;
+import by.bsuir.webtech.task3.calculator.Calculator;
 
 import java.util.Map;
 
@@ -31,7 +31,7 @@ public class Task3 {
 
     public static void printResultTable(Map<Double, Double> resultTable) {
         for (var i : resultTable.keySet()) {
-            writer.writeln(i + " | " + resultTable.get(i));
+            writer.writef("%10.2f | %f\n", i, resultTable.get(i));
         }
     }
 }

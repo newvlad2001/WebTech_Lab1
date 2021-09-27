@@ -1,4 +1,4 @@
-package by.bsuir.webtech.introtasks.services.output.interfaces;
+package by.bsuir.webtech.services.output.interfaces;
 
 public interface Writer {
     void write(String s);

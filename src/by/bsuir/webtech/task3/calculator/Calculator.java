@@ -1,4 +1,4 @@
-package by.bsuir.webtech.introtasks.task3.calculator;
+package by.bsuir.webtech.task3.calculator;
 
 import java.util.TreeMap;
 
