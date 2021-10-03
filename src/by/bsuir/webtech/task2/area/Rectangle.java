@@ -20,7 +20,7 @@ public class Rectangle {
         return result;
     }
 
-    public boolean isContains(double x, double y) {
+    public boolean contains(double x, double y) {
         boolean result = (x >= this.x && x <= this.x1 && y <= this.y && y >= this.y1);
 
         return result;

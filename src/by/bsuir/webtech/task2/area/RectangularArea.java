@@ -10,7 +10,7 @@ public class RectangularArea {
 
     public boolean contains(double x, double y) {
         for (var rect : area) {
-            if (rect.isContains(x, y)) {
+            if (rect.contains(x, y)) {
                 return true;
             }
         }
