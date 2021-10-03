@@ -10,12 +10,7 @@ public class Task6 {
         Writer writer = new ConsoleWriter();
         double[][] resultMatrix = fillMatrix(testArray);
 
-        for (int i = 0; i < resultMatrix.length; i++) {
-            for (int j = 0; j < resultMatrix[i].length; j++) {
-                writer.write(resultMatrix[i][j] + " ");
-            }
-            writer.writeln("");
-        }
+        printMatrix(writer, resultMatrix);
     }
 
     public static double[][] fillMatrix(double[] arr) {
@@ -35,5 +30,14 @@ public class Task6 {
 
         System.arraycopy(arr, 1, result, 0, arr.length - 1);
         return result;
+    }
+
+    public static void printMatrix(Writer writer, double[][] matrix) {
+        for (int i = 0; i < matrix.length; i++) {
+            for (int j = 0; j < matrix[i].length; j++) {
+                writer.write(matrix[i][j] + " ");
+            }
+            writer.writeln("");
+        }
     }
 }
