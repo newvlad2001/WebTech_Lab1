@@ -13,9 +13,7 @@ public class Task7 {
 
     public static void sort(double[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
-            if (i < 0) {
-                i = 0;
-            }
+            i = Math.max(i, 0);
             if (arr[i] > arr[i + 1]) {
                 swap(arr, i, i + 1);
                 i -= 2;
