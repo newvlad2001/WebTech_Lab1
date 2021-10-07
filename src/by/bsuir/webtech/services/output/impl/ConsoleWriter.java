@@ -1,6 +1,6 @@
 package by.bsuir.webtech.services.output.impl;
 
-import by.bsuir.webtech.services.output.interfaces.Writer;
+import by.bsuir.webtech.services.output.Writer;
 
 public class ConsoleWriter implements Writer {
     @Override

@@ -2,8 +2,8 @@ package by.bsuir.webtech.task1;
 
 import by.bsuir.webtech.services.input.impl.ConsoleReader;
 import by.bsuir.webtech.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.services.input.interfaces.Reader;
-import by.bsuir.webtech.services.output.interfaces.Writer;
+import by.bsuir.webtech.services.input.Reader;
+import by.bsuir.webtech.services.output.Writer;
 
 public class Task1 {
 
@@ -23,7 +23,9 @@ public class Task1 {
     }
 
     public static double solveExpression(double x, double y) {
-        double result = (1 + Math.pow(Math.sin(x + y), 2)) / (2 + Math.abs(x - (2 * x) / (1 + x * x * y * y)));
+        double numerator = 1 + Math.pow(Math.sin(x + y), 2);
+        double denominator = 2 + Math.abs(x - (2 * x) / (1 + x * x * y * y));
+        double result = numerator / denominator;
 
         return result;
     }

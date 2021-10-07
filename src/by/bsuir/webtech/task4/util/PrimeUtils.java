@@ -1,7 +1,7 @@
-package by.bsuir.webtech.task4.checker;
+package by.bsuir.webtech.task4.util;
 
-public class PrimeChecker {
-    private PrimeChecker() {}
+public class PrimeUtils {
+    private PrimeUtils() {}
 
     public static boolean isPrime(int number) {
         if (number < 2) {

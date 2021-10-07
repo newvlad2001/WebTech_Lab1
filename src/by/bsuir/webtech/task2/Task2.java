@@ -1,11 +1,12 @@
 package by.bsuir.webtech.task2;
 
 import by.bsuir.webtech.services.input.impl.ConsoleReader;
-import by.bsuir.webtech.services.input.interfaces.Reader;
+import by.bsuir.webtech.services.input.Reader;
 import by.bsuir.webtech.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.services.output.interfaces.Writer;
-import by.bsuir.webtech.task2.area.Rectangle;
-import by.bsuir.webtech.task2.area.RectangularArea;
+import by.bsuir.webtech.services.output.Writer;
+import by.bsuir.webtech.task2.entity.Rectangle;
+import by.bsuir.webtech.task2.entity.RectangularArea;
+import by.bsuir.webtech.task2.util.AreaUtils;
 
 public class Task2 {
     public static void main(String[] args) {
@@ -22,7 +23,7 @@ public class Task2 {
         x = reader.readDouble();
         writer.writeln("Input y coordinate of the point:");
         y = reader.readDouble();
-        result = area.contains(x, y);
+        result = AreaUtils.contains(area, x, y);
         writer.writef("The area contains a point (%.2f,%.2f): %s\n", x, y, result);
     }
 

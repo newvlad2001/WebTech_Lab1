@@ -1,4 +1,4 @@
-package by.bsuir.webtech.task2.area;
+package by.bsuir.webtech.task2.entity;
 
 public class Rectangle {
 
@@ -14,15 +14,19 @@ public class Rectangle {
         this.y1 = y - height;
     }
 
-    public double[] getCoords() {
-        double[] result = new double[]{x, y, x1, y1};
-
-        return result;
+    public double getX() {
+        return x;
     }
 
-    public boolean contains(double x, double y) {
-        boolean result = (x >= this.x && x <= this.x1 && y <= this.y && y >= this.y1);
+    public double getY() {
+        return y;
+    }
 
-        return result;
+    public double getX1() {
+        return x1;
+    }
+
+    public double getY1() {
+        return y1;
     }
 }

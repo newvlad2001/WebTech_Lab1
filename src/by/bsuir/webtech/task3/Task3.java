@@ -1,10 +1,10 @@
 package by.bsuir.webtech.task3;
 
 import by.bsuir.webtech.services.input.impl.ConsoleReader;
-import by.bsuir.webtech.services.input.interfaces.Reader;
+import by.bsuir.webtech.services.input.Reader;
 import by.bsuir.webtech.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.services.output.interfaces.Writer;
-import by.bsuir.webtech.task3.calculator.Calculator;
+import by.bsuir.webtech.services.output.Writer;
+import by.bsuir.webtech.task3.util.CalculatorUtils;
 
 import java.util.Map;
 
@@ -25,7 +25,7 @@ public class Task3 {
         b = reader.readDouble();
         writer.writeln("Input the step for calculations: ");
         h = reader.readDouble();
-        result = Calculator.calculateFunctionInRange(a, b, h);
+        result = CalculatorUtils.calculateFunctionInRange(a, b, h);
         printResultTable(result);
     }
 

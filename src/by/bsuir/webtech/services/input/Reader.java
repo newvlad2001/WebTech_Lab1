@@ -1,4 +1,4 @@
-package by.bsuir.webtech.services.input.interfaces;
+package by.bsuir.webtech.services.input;
 
 public interface Reader {
     int readInt();

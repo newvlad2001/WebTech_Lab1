@@ -1,7 +1,7 @@
 package by.bsuir.webtech.task8;
 
 import by.bsuir.webtech.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.services.output.interfaces.Writer;
+import by.bsuir.webtech.services.output.Writer;
 
 import java.util.Arrays;
 

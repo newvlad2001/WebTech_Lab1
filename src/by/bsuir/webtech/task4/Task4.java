@@ -1,8 +1,8 @@
 package by.bsuir.webtech.task4;
 
 import by.bsuir.webtech.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.services.output.interfaces.Writer;
-import by.bsuir.webtech.task4.checker.PrimeChecker;
+import by.bsuir.webtech.services.output.Writer;
+import by.bsuir.webtech.task4.util.PrimeUtils;
 
 public class Task4 {
     static Writer writer = new ConsoleWriter();
@@ -14,7 +14,7 @@ public class Task4 {
 
     public static void outputIndexesOfPrimes(int[] array) {
         for (int i = 0; i < array.length; i++) {
-            if (PrimeChecker.isPrime(array[i])) {
+            if (PrimeUtils.isPrime(array[i])) {
                 writer.write(i + " ");
             }
         }

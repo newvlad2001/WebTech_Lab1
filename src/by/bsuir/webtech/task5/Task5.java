@@ -1,7 +1,7 @@
 package by.bsuir.webtech.task5;
 
 import by.bsuir.webtech.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.services.output.interfaces.Writer;
+import by.bsuir.webtech.services.output.Writer;
 
 public class Task5 {
     private static final int[] testArray = {10, 4, 5, 4, -5, 12, 8, -3, 0, 13};

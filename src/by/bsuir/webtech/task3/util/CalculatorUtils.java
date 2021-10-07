@@ -1,10 +1,10 @@
-package by.bsuir.webtech.task3.calculator;
+package by.bsuir.webtech.task3.util;
 
 import java.util.TreeMap;
 
-public class Calculator {
+public class CalculatorUtils {
 
-    private Calculator() {}
+    private CalculatorUtils() {}
 
     public static double calculateFunction(double x) {
         double result = Math.tan(x);

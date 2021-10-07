@@ -1,7 +1,7 @@
 package by.bsuir.webtech.task7;
 
 import by.bsuir.webtech.services.output.impl.ConsoleWriter;
-import by.bsuir.webtech.services.output.interfaces.Writer;
+import by.bsuir.webtech.services.output.Writer;
 
 public class Task7 {
     private static final double[] testArray = {1.0, -0.3, -1.0, 2.0, 2.2, -1.0};
