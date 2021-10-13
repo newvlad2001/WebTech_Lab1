@@ -27,8 +27,7 @@ public class Task5 {
             }
             maxSeqLength = Math.max(maxSeqLength, currSeqLength);
         }
-        int result = arr.length - maxSeqLength;
-        return result;
+        return arr.length - maxSeqLength;
     }
 
 

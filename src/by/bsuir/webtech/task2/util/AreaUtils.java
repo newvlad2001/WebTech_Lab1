@@ -7,9 +7,7 @@ public class AreaUtils {
     private AreaUtils() {}
 
     public static boolean contains(Rectangle rect, double x, double y) {
-        boolean result = (x >= rect.getX() && x <= rect.getX1() && y <= rect.getY() && y >= rect.getY1());
-
-        return result;
+        return (x >= rect.getX() && x <= rect.getX1() && y <= rect.getY() && y >= rect.getY1());
     }
 
     public static boolean contains(RectangularArea area, double x, double y) {

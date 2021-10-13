@@ -13,7 +13,6 @@ public class BasketCalcImpl implements BasketCalc {
         for (Ball ball : b.getContent()) {
             result += ball.getWeight();
         }
-
         return result;
     }
 
@@ -26,7 +25,6 @@ public class BasketCalcImpl implements BasketCalc {
                 result++;
             }
         }
-
         return result;
     }
 }
