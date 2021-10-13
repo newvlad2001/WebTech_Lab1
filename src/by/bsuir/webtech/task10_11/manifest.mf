@@ -1,0 +1,2 @@
+main-class: by.bsuir.webtech.task9.Task9
+class-path: bin/
