@@ -2,6 +2,7 @@ package by.bsuir.webtech.task15_16;
 
 import by.bsuir.webtech.task15_16.comparator.BookAuthorTitleComparator;
 import by.bsuir.webtech.task15_16.comparator.BookTitleAuthorComparator;
+import by.bsuir.webtech.task15_16.comparator.BookTitleComparator;
 import by.bsuir.webtech.task15_16.entity.Book;
 
 import java.util.ArrayList;
@@ -15,8 +16,8 @@ public class Task15_16 {
         books.add(new Book("C", "C", 1));
         books.add(new Book("A", "A", 1));
 
-        books.sort(new BookAuthorTitleComparator());
-        System.out.println("Author-Title");
+        books.sort(new BookTitleComparator());
+        System.out.println("Title");
         for (var b : books) {
             System.out.println(b);
         }
